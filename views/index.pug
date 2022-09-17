@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
-  body.body-css 
-    h1= title
+  body
+    header
+      h1= title
+      nav 
+        a(href="/new") Write a Message
+    main
+      each message in messages
+        h2= message.text
+        p= message.user 
+        p= message.added
+    
 
