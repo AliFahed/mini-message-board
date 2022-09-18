@@ -1,16 +1,13 @@
-doctype html
-html
-  head
-    title= title
-  body
-    header
-      h1= title
-      nav 
-        a(href="/new") Write a Message
-    main
-      each message in messages
-        h2= message.text
-        p= message.user 
-        p= message.added
-    
+extends layout
 
+block content
+  header.header
+    div.header-container
+      h1.project-title= title
+      nav
+        a.message-link(href="/new") Write a Message
+  main.main
+      each message in messages
+        p.username= message.user 
+        h2.message= message.text
+        p.date-and-time= message.added

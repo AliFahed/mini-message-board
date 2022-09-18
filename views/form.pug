@@ -1,13 +1,14 @@
-doctype html
-html
-  head
-    title= title
-  body
-    header
-      h1= title
-    main
-      h2= "Message" 
-      form(method="POST" action="/new")
-        input(type="text", placeholder="Enter your Name", name="username" id="username")
-        textarea(placeholder="Write a Message", name="message" id="message")
-        button(type="submit")= "Send"
+extends layout
+
+block content
+  header.header
+    div.header-container
+      h1.project-title= title
+      nav
+        a.go-back-link(href="/") Cancel
+  main.main
+    h2.new-message-header= "New Message" 
+    form.form(method="POST" action="/new")
+      input.input(type="text", placeholder="Enter your Name", name="username" id="username", maxlength="35", required)
+      textarea.textarea(placeholder="Write a Message", name="message" id="message", required)
+      button.send-btn(type="submit")= "Send"
