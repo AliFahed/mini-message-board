@@ -17,20 +17,23 @@ A Mini Message Board App for chatting, Users can view all the messages sent & se
 - Express.js
  
 ## Getting Started
-1. Fork this repo to your github account, run:
+1. Fork this repo to your github account, Click Fork from the top right of this page:
+![image](https://user-images.githubusercontent.com/90851899/194616702-adefb0d4-0fd1-4b70-b00c-d15a979874d7.png)
+2. Clone the repo you forked:
+- Note: Add your github username at ```Your Username``` in the command below & run.
 ```
-git clone git@github.com:AliFahed/mini-message-board.git
+git clone git@github.com:Your Username/mini-message-board.git
 ```
-2. Change directory to the folder mini-message-board that you just cloned, run:
+3. Change directory to the folder mini-message-board that you just cloned, run:
 ```
 cd mini-message-board
 ```
-3. Install the project dependencies, run:
+4. Install the project dependencies, run:
 ```
 npm install
 ```
-4. To start the project run:
+5. To start the project run:
 ```
 npm run serverstart
 ```
-5. Finally, open ``` localhost:3000 ``` in your browser.
+6. Finally, open ``` localhost:3000 ``` in your browser.
